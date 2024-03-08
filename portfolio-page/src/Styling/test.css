@@ -1,0 +1,14 @@
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+section h1 {
+  position: relative;
+  text-align: center;
+  top: 50%;
+}
+
+nav {
+  position: fixed;
+}
