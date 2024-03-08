@@ -1,14 +1,10 @@
 section {
-  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
 }
 
 section h1 {
-  position: relative;
   text-align: center;
-  top: 50%;
-}
-
-nav {
-  position: fixed;
 }
