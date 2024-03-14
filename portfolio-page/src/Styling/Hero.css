@@ -26,7 +26,8 @@
   text-align: center;
 }
 
-.text p {
+.text-p1,
+.text-p2 {
   font-weight: 700;
 
   color: #707070;
@@ -153,7 +154,7 @@
     flex-wrap: wrap;
     align-content: center;
 
-    margin: 2rem auto 0 auto;
+    margin: 2rem auto 2rem auto;
 
     gap: 5rem;
   }

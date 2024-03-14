@@ -63,7 +63,7 @@ export default function Navbar() {
           to="Hero"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-40}
           duration={1000}
           onClick={closeMenu}
         >
@@ -86,7 +86,7 @@ export default function Navbar() {
               to="Hero"
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-40}
               duration={1000}
               onClick={closeMenu}
             >
@@ -99,11 +99,11 @@ export default function Navbar() {
               to="AboutMe"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={0}
               duration={1000}
               onClick={closeMenu}
             >
-              About Me
+              About
             </Link>
           </li>
           <li>
