@@ -37,7 +37,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.innerWidth > 1200 && window.scrollY > 0) {
+      if (window.scrollY > 0) {
         setIsOnTop(false);
       } else {
         setIsOnTop(true);

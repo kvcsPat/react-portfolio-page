@@ -14,6 +14,8 @@
 
   transition: 0.3s ease-in;
 
+  z-index: 1;
+
   background: white;
 }
 
@@ -37,7 +39,7 @@
 .logo {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 3.5rem;
+  font-size: 3rem;
 
   transition: 0.25s ease-in;
 }
@@ -84,26 +86,21 @@
   background-color: rgb(220, 220, 220);
 }
 
+/*----------Nav Items incase of hover - Desktop----------*/
 .navbar-content:hover::after {
   transform: scaleX(1);
 }
 
-/*----------Nav Items incase of hover - Desktop----------*/
 .navbar-content:hover {
   color: rgb(190, 190, 190);
 }
 
 /*----------Hamburger Menu----------*/
 .nav-hamburger {
-  position: absolute;
-
   display: none;
 
   flex-direction: column;
   justify-content: space-around;
-
-  top: 25px;
-  right: 25px;
 
   width: 1.875rem;
   height: 1.313rem;
@@ -120,30 +117,36 @@
 
   transition: all ease-in-out 0.2s;
 
-  background-color: #444444;
+  background-color: #303030;
 }
 
 /*----------Responsive Screens----------*/
-@media screen and (min-width: 1201px) {
+@media screen and (width > 1200px) {
+  /*----------Logo incase of hover - Desktop----------*/
   .logo:hover {
     font-size: 4rem;
 
     color: rgb(200, 67, 68);
   }
 }
-
 @media screen and (max-width: 1200px) {
   /*----------Navbar - Mobile----------*/
   .navbar {
-    padding: 0 1rem;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+  }
+
+  /*----------Navbar incase of scrolling - Desktop----------*/
+  .sticky {
+    padding: 0.6rem 2rem 0.6rem 2rem;
+
+    box-shadow: 0px 0px 10px rgb(0 0 0/20%);
   }
 
   /*----------Logo - Mobile----------*/
   .logo-container {
-    position: absolute;
-
-    top: 12px;
-    left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     width: 4rem;
     height: 3rem;
@@ -167,7 +170,7 @@
 
     width: 100%;
 
-    padding: 3rem 0 0.6rem;
+    padding: 3rem 0 2rem 0;
     gap: 1rem;
 
     z-index: -100;

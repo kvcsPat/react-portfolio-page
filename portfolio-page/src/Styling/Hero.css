@@ -1,0 +1,181 @@
+/*----------Hero Section - Desktop----------*/
+.hero {
+  display: flex;
+  justify-content: center;
+
+  gap: 10rem;
+}
+
+/*----------Profile Pic - Desktop----------*/
+.profile-pic-container {
+  display: flex;
+
+  height: 400px;
+  width: 400px;
+
+  margin: auto 0;
+}
+
+.profile-pic-container img {
+  border-radius: 50%;
+}
+
+/*----------Intro Text - Desktop----------*/
+.text {
+  align-self: center;
+  text-align: center;
+}
+
+.text p {
+  font-weight: 700;
+
+  color: #707070;
+}
+
+.text-p1 {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.text-p2 {
+  font-size: 1.75rem;
+
+  margin-bottom: 1.5rem;
+}
+
+/*----------Contact Buttons - Desktop----------*/
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.btn-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 8.5rem;
+  height: 3.72rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 0.825rem;
+  font-weight: 700;
+
+  padding: 1rem;
+
+  width: 8rem;
+  height: 3.5rem;
+
+  border-radius: 2rem;
+  transition: all 300ms ease;
+}
+
+.btn-color-1 {
+  border: #303030 0.15rem solid;
+}
+
+.btn-color-2 {
+  color: white;
+  background-color: #303030;
+}
+
+/*----------Social Buttons - Desktop----------*/
+.socials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1.5rem;
+
+  gap: 1rem;
+}
+
+.btn-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 3rem;
+  width: 3rem;
+}
+
+.social-icon {
+  height: 2.5rem !important;
+  width: 2.5rem !important;
+
+  transition: 0.15s ease-in;
+}
+
+/*----------Responsive Screens----------*/
+@media screen and (width > 1200px) {
+  /*----------Social Buttons incase of hover - Desktop----------*/
+  .btn-color-1:hover,
+  .btn-color-2:hover {
+    font-size: 0.877rem;
+
+    width: 8.5rem;
+    height: 3.72rem;
+
+    color: white;
+    background-color: rgb(200, 67, 68);
+  }
+
+  .btn-color-1:hover {
+    border: rgb(200, 67, 68) 0.15rem solid;
+  }
+
+  /*----------Social Buttons incase of hover - Desktop----------*/
+  .social-icon:hover {
+    height: 3rem !important;
+    width: 3rem !important;
+  }
+
+  .social-icon:hover .social-svg-mask {
+    fill: rgb(200, 67, 68) !important;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    flex-wrap: wrap;
+    align-content: center;
+
+    margin: 2rem auto 0 auto;
+
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /*----------Hero Section - mobile----------*/
+  .hero {
+    gap: 2.5rem;
+  }
+
+  /*----------Profile Pic - Mobile----------*/
+  .profile-pic-container {
+    height: 250px;
+    width: 250px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .text-p2 {
+    font-size: 1.16rem;
+  }
+}
