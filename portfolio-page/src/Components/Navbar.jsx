@@ -112,7 +112,7 @@ export default function Navbar() {
               to="Skills"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={-45}
               duration={1000}
               onClick={closeMenu}
             >
