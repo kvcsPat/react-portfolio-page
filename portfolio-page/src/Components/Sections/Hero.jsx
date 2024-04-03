@@ -38,6 +38,7 @@ export default function Hero() {
               url="ww.linkedin.com"
               href="https://www.linkedin.com/in/kovacspatrik94/"
               target="_blank"
+              rel="noreferrer"
             />
           </div>
           <div className="btn-social">
@@ -46,6 +47,7 @@ export default function Hero() {
               url="ww.github.com"
               href="https://github.com/kvcsPat"
               target="_blank"
+              rel="noreferrer"
             />
           </div>
         </div>

@@ -8,7 +8,7 @@
 }
 
 /*----------Skill Card Container - Desktop----------*/
-.cards {
+.skill-cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@
 }
 
 /*----------Skill Cards - Desktop----------*/
-.card {
+.skill-card {
   text-align: center;
 
   width: 10rem;
@@ -44,7 +44,7 @@
 /*----------Responsive Screens----------*/
 @media screen and (width > 1200px) {
   /*----------Skill Cards hover - Desktop----------*/
-  .card:hover {
+  .skill-card:hover {
     cursor: pointer;
 
     color: rgb(200, 67, 68);
@@ -59,13 +59,14 @@
   .skills {
     margin: 0 5rem;
   }
+
   /*----------Skill Card Container - Mobile----------*/
-  .cards {
+  .skill-cards {
     gap: 1.5rem;
   }
 
   /*----------Skill Cards - Mobile----------*/
-  .card {
+  .skill-card {
     width: 8rem;
     height: 8rem;
 
@@ -78,6 +79,6 @@
   .skills {
     height: fit-content;
 
-    margin: 0 2rem;
+    margin: 0 2rem 5rem;
   }
 }
