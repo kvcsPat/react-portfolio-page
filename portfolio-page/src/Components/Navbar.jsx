@@ -138,11 +138,11 @@ export default function Navbar() {
               to="ContactMe"
               spy={true}
               smooth={true}
-              offset={50}
+              offset={0}
               duration={1000}
               onClick={closeMenu}
             >
-              Contact Me
+              Contact
             </Link>
           </li>
         </ul>

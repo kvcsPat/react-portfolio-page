@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
 
-  margin: 0 2rem;
+  margin: 0 2rem 20rem;
 }
 
 /*----------Project Card Container - Desktop----------*/
@@ -104,8 +104,6 @@
 @media screen and (max-width: 1400px) {
   .projects {
     height: fit-content;
-
-    margin-bottom: 5rem;
   }
 }
 
