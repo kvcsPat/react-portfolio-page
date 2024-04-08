@@ -61,18 +61,21 @@ export default function ContactMe() {
         <form className="contact-form" onSubmit={handleSubmit}>
           <input
             className="contact-name field"
+            name="user_name"
             ref={nameRef}
             type="text"
             placeholder="Enter your full name"
           />
           <input
             className="contact-email field"
+            name="user_email"
             ref={emailRef}
             type="email"
             placeholder="Enter your email address"
           />
           <textarea
             className="contact-message field"
+            name="message"
             ref={messageRef}
             cols="30"
             rows="10"

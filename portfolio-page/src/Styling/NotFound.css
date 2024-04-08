@@ -1,0 +1,38 @@
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-title {
+  font-size: 7rem;
+  font-weight: 700;
+
+  padding-bottom: 2rem;
+
+  color: #303030;
+}
+
+.not-found-text {
+  margin-bottom: unset;
+}
+
+.redirect {
+  position: relative;
+
+  color: rgb(200, 67, 68);
+}
+
+.redirect::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background-color: rgb(200, 67, 68);
+}

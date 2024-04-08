@@ -86,15 +86,6 @@
   background-color: rgb(220, 220, 220);
 }
 
-/*----------Nav Items incase of hover - Desktop----------*/
-.navbar-content:hover::after {
-  transform: scaleX(1);
-}
-
-.navbar-content:hover {
-  color: rgb(190, 190, 190);
-}
-
 /*----------Hamburger Menu----------*/
 .nav-hamburger {
   display: none;
@@ -122,6 +113,15 @@
 
 /*----------Responsive Screens----------*/
 @media screen and (width > 1200px) {
+  /*----------Nav Items incase of hover - Desktop----------*/
+  .navbar-content:hover::after {
+    transform: scaleX(1);
+  }
+
+  .navbar-content:hover {
+    color: rgb(190, 190, 190);
+  }
+
   /*----------Logo incase of hover - Desktop----------*/
   .logo:hover {
     font-size: 4rem;
