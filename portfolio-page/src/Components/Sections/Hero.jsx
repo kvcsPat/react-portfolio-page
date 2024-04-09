@@ -3,6 +3,7 @@ import Reveal from "../Reveal";
 import { Link } from "react-scroll";
 import { SocialIcon } from "react-social-icons";
 import profile from "../../Assets/profile.jpg";
+import cv from "../../Assets/cv_patrik_kovacs.pdf";
 import "../../Styling/Hero.css";
 
 export default function Hero() {
@@ -20,7 +21,15 @@ export default function Hero() {
           <p className="text-p2">Frontend Developer</p>
           <div className="btn-container">
             <div className="btn-contact">
-              <button className="btn-color-1">Download CV</button>
+              <a
+                href={cv}
+                target="_blank"
+                rel="noreferrer"
+                download="CV_Patrik_Kovacs"
+                className="btn-color-1"
+              >
+                Download CV
+              </a>
             </div>
             <div className="btn-contact">
               <Link
@@ -28,7 +37,7 @@ export default function Hero() {
                 to="ContactMe"
                 spy={true}
                 smooth={true}
-                offset={50}
+                offset={0}
                 duration={1000}
               >
                 Get In Touch
