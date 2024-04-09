@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Reveal from "../Components/Reveal";
 import { Link } from "react-scroll";
 import "../Styling/Navbar.css";
 
@@ -57,95 +58,102 @@ export default function Navbar() {
         isOnTop ? "" : "sticky"
       }`}
     >
-      <div className="logo-container">
-        <Link
-          className="logo"
-          to="Hero"
-          spy={true}
-          smooth={true}
-          offset={-40}
-          duration={1000}
-          onClick={closeMenu}
+      <Reveal>
+        <div className="logo-container">
+          <Link
+            className="logo"
+            to="Hero"
+            spy={true}
+            smooth={true}
+            offset={-40}
+            duration={1000}
+            onClick={closeMenu}
+          >
+            &lt;/&gt;
+          </Link>
+        </div>
+      </Reveal>
+      <Reveal>
+        <button
+          className={`nav-hamburger ${navActive ? "active" : ""}`}
+          onClick={toggleNav}
         >
-          &lt;/&gt;
-        </Link>
-      </div>
-      <button
-        className={`nav-hamburger ${navActive ? "active" : ""}`}
-        onClick={toggleNav}
-      >
-        <span className="nav-hamburger-line"></span>
-        <span className="nav-hamburger-line"></span>
-        <span className="nav-hamburger-line"></span>
-      </button>
+          <span className="nav-hamburger-line"></span>
+          <span className="nav-hamburger-line"></span>
+          <span className="nav-hamburger-line"></span>
+        </button>
+      </Reveal>
+
       <div className={`nav-items ${navActive ? "active" : ""}`}>
-        <ul>
-          <li>
-            <Link
-              className="navbar-content"
-              to="Hero"
-              spy={true}
-              smooth={true}
-              offset={-40}
-              duration={1000}
-              onClick={closeMenu}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="navbar-content"
-              to="AboutMe"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={1000}
-              onClick={closeMenu}
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="navbar-content"
-              to="Skills"
-              spy={true}
-              smooth={true}
-              offset={-45}
-              duration={1000}
-              onClick={closeMenu}
-            >
-              Skills
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="navbar-content"
-              to="Projects"
-              spy={true}
-              smooth={true}
-              offset={-45}
-              duration={1000}
-              onClick={closeMenu}
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              className="navbar-content"
-              to="ContactMe"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={1000}
-              onClick={closeMenu}
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
+        <Reveal>
+          <ul>
+            <li>
+              <Link
+                className="navbar-content"
+                to="Hero"
+                spy={true}
+                smooth={true}
+                offset={-40}
+                duration={1000}
+                onClick={closeMenu}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="navbar-content"
+                to="AboutMe"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1000}
+                onClick={closeMenu}
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="navbar-content"
+                to="Skills"
+                spy={true}
+                smooth={true}
+                offset={-45}
+                duration={1000}
+                onClick={closeMenu}
+              >
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="navbar-content"
+                to="Projects"
+                spy={true}
+                smooth={true}
+                offset={-45}
+                duration={1000}
+                onClick={closeMenu}
+              >
+                Projects
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="navbar-content"
+                to="ContactMe"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1000}
+                onClick={closeMenu}
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </Reveal>
       </div>
     </nav>
   );

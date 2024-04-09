@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
+import Reveal from "../Reveal";
 import emailjs from "@emailjs/browser";
 import useToggle from "../../useToggle";
 import Modal from "../Modal";
@@ -54,41 +55,45 @@ export default function ContactMe() {
     <section id="ContactMe" className="contact-me">
       {isOn && <Modal toggle={toggleIsOn} />}
       <div className="text">
-        <p className="text-p1">Get in touch</p>
-        <h1 className="title invert">Contact Me</h1>
+        <Reveal>
+          <p className="text-p1">Get in touch</p>
+          <h1 className="title invert">Contact Me</h1>
+        </Reveal>
       </div>
       <div className="form-container">
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <input
-            className="contact-name field"
-            name="user_name"
-            ref={nameRef}
-            type="text"
-            placeholder="Enter your full name"
-          />
-          <input
-            className="contact-email field"
-            name="user_email"
-            ref={emailRef}
-            type="email"
-            placeholder="Enter your email address"
-          />
-          <textarea
-            className="contact-message field"
-            name="message"
-            ref={messageRef}
-            cols="30"
-            rows="10"
-            placeholder="Send me a message"
-          />
-          <div className="btn-contact">
+        <Reveal>
+          <form className="contact-form" onSubmit={handleSubmit}>
             <input
-              className={isLoading ? "btn-submitted" : "btn-submit"}
-              type="submit"
-              value={isLoading ? "Sending" : "Send"}
+              className="contact-name field"
+              name="user_name"
+              ref={nameRef}
+              type="text"
+              placeholder="Enter your full name"
             />
-          </div>
-        </form>
+            <input
+              className="contact-email field"
+              name="user_email"
+              ref={emailRef}
+              type="email"
+              placeholder="Enter your email address"
+            />
+            <textarea
+              className="contact-message field"
+              name="message"
+              ref={messageRef}
+              cols="30"
+              rows="10"
+              placeholder="Send me a message"
+            />
+            <div className="btn-contact">
+              <input
+                className={isLoading ? "btn-submitted" : "btn-submit"}
+                type="submit"
+                value={isLoading ? "Sending" : "Send"}
+              />
+            </div>
+          </form>
+        </Reveal>
       </div>
     </section>
   );
