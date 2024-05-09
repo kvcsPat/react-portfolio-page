@@ -10,11 +10,11 @@
 
   height: fit-content;
 
-  background-color: #303030;
+  background-color: var(--text-color-main);
 }
 
 .invert {
-  color: #ffffff;
+  color: var(--bg-color-main);
 }
 
 .form-container {
@@ -45,15 +45,15 @@
 
   border-radius: 1rem;
 
-  color: #303030;
-  background-color: #ffffff;
+  color: var(--text-color-main);
+  background-color: var(--bg-color-main);
 
-  box-shadow: 0px 0px 10px rgb(0 0 0/20%);
+  box-shadow: var(--dropshadow);
 }
 
 .field::placeholder {
   font-size: 0.825rem;
-  color: #454545;
+  color: var(--text-color-placeholder);
 }
 
 .btn-submit {
@@ -72,9 +72,9 @@
   height: 3.5rem;
 
   border-radius: 2rem;
-  border: #ffffff 0.15rem solid;
+  border: var(--bg-color-main) 0.15rem solid;
 
-  color: #ffffff;
+  color: var(--bg-color-main);
 
   transition: all 300ms ease;
 }
@@ -95,10 +95,10 @@
   height: 3.72rem;
 
   border-radius: 2rem;
-  border: rgb(200, 67, 68) 0.15rem solid;
+  border: var(--hover-color-main) 0.15rem solid;
 
-  color: white;
-  background-color: rgb(200, 67, 68);
+  color: var(--bg-color-main);
+  background-color: var(--hover-color-main);
 }
 
 @media screen and (width > 1200px) {
@@ -108,9 +108,9 @@
     width: 8.5rem;
     height: 3.72rem;
 
-    border: rgb(200, 67, 68) 0.15rem solid;
+    border: var(--hover-color-main) 0.15rem solid;
 
-    color: white;
-    background-color: rgb(200, 67, 68);
+    color: var(--bg-color-main);
+    background-color: var(--hover-color-main);
   }
 }

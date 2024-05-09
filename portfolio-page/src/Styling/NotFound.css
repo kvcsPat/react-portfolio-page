@@ -10,7 +10,7 @@
 
   padding-bottom: 2rem;
 
-  color: #303030;
+  color: var(--text-color-main);
 }
 
 .not-found-text {
@@ -20,7 +20,7 @@
 .redirect {
   position: relative;
 
-  color: rgb(200, 67, 68);
+  color: var(--hover-color-main);
 }
 
 .redirect::after {
@@ -34,5 +34,5 @@
   width: 100%;
   height: 3px;
 
-  background-color: rgb(200, 67, 68);
+  background-color: var(--hover-color-main);
 }

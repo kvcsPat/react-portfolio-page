@@ -51,7 +51,7 @@
 .text-p2 {
   font-weight: 700;
 
-  color: #707070;
+  color: var(--text-color-secondary);
 }
 
 .text-p1 {
@@ -106,12 +106,12 @@
 }
 
 .btn-color-1 {
-  border: #303030 0.15rem solid;
+  border: var(--text-color-main) 0.15rem solid;
 }
 
 .btn-color-2 {
-  color: white;
-  background-color: #303030;
+  color: var(--bg-color-main);
+  background-color: var(--text-color-main);
 }
 
 /*----------Social Buttons - Desktop----------*/
@@ -151,12 +151,12 @@
     width: 8.5rem;
     height: 3.72rem;
 
-    color: white;
-    background-color: rgb(200, 67, 68);
+    color: var(--bg-color-main);
+    background-color: var(--hover-color-main);
   }
 
   .btn-color-1:hover {
-    border: rgb(200, 67, 68) 0.15rem solid;
+    border: var(--hover-color-main) 0.15rem solid;
   }
 
   /*----------Social Buttons incase of hover - Desktop----------*/
@@ -166,7 +166,7 @@
   }
 
   .social-icon:hover .social-svg-mask {
-    fill: rgb(200, 67, 68) !important;
+    fill: var(--hover-color-main) !important;
   }
 }
 

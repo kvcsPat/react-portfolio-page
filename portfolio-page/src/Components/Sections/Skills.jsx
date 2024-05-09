@@ -1,14 +1,16 @@
 import React from "react";
 import Reveal from "../Reveal";
-import { SiHtml5 } from "react-icons/si";
-import { SiCss3 } from "react-icons/si";
-import { SiJavascript } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
-import { FaSass } from "react-icons/fa";
-import { SiReact } from "react-icons/si";
-import { FaGitAlt } from "react-icons/fa";
-import { FaNodeJs } from "react-icons/fa";
-import { SiDocker } from "react-icons/si";
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiTypescript,
+  SiReact,
+  SiExpress,
+  SiMongodb,
+  SiDocker,
+} from "react-icons/si";
+import { FaSass, FaNodeJs, FaGitAlt } from "react-icons/fa";
 import "../../Styling/Skills.css";
 
 export default function Skills() {
@@ -61,6 +63,18 @@ export default function Skills() {
           <div className="skill-card">
             <FaNodeJs className="skill-icons" />
             <p>Node JS</p>
+          </div>
+        </Reveal>
+        <Reveal>
+          <div className="skill-card">
+            <SiExpress className="skill-icons" />
+            <p>Express</p>
+          </div>
+        </Reveal>
+        <Reveal>
+          <div className="skill-card">
+            <SiMongodb className="skill-icons" />
+            <p>MongoDB</p>
           </div>
         </Reveal>
         <Reveal>

@@ -16,14 +16,14 @@
 
   z-index: 1;
 
-  background: white;
+  background: var(--bg-color-main);
 }
 
 /*----------Navbar incase of scrolling - Desktop----------*/
 .sticky {
   padding: 0.6rem 12rem;
 
-  box-shadow: 0px 0px 10px rgb(0 0 0/20%);
+  box-shadow: var(--dropshadow);
 }
 
 /*----------Logo - Desktop----------*/
@@ -83,7 +83,7 @@
   transform: scaleX(0);
   transition: transform 0.3s ease-in;
 
-  background-color: rgb(220, 220, 220);
+  background-color: var(--hover-color-nav-underline);
 }
 
 /*----------Hamburger Menu----------*/
@@ -108,7 +108,7 @@
 
   transition: all ease-in-out 0.2s;
 
-  background-color: #303030;
+  background-color: var(--text-color-main);
 }
 
 /*----------Responsive Screens----------*/
@@ -119,14 +119,14 @@
   }
 
   .navbar-content:hover {
-    color: rgb(190, 190, 190);
+    color: var(--hover-color-nav-text);
   }
 
   /*----------Logo incase of hover - Desktop----------*/
   .logo:hover {
     font-size: 4rem;
 
-    color: rgb(200, 67, 68);
+    color: var(--hover-color-main);
   }
 }
 @media screen and (max-width: 1200px) {
@@ -139,7 +139,7 @@
   .sticky {
     padding: 0.6rem 2rem 0.6rem 2rem;
 
-    box-shadow: 0px 0px 10px rgb(0 0 0/20%);
+    box-shadow: var(--dropshadow);
   }
 
   /*----------Logo - Mobile----------*/
@@ -197,7 +197,7 @@
 
     z-index: -1000;
 
-    background-color: white;
+    background-color: var(--bg-color-main);
   }
 
   .nav-items.active {
